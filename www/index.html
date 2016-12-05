@@ -1,0 +1,151 @@
+<!DOCTYPE>
+<html>
+<head>
+      <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    -->
+    <!--
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; connect-src 'self' http://api.openweathermap.org/; img-src 'self' http://openweathermap.org/">-->
+
+
+    <title>Previsão do Tempo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="icon" type="image/png" href="imgs/icon.png" />
+
+</head>
+<body >
+
+<nav class="navbar navbar-default" id="nav">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand barra" href="#"> <i><b> Previsão </b></i></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle barra" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Favoritos <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="menu">
+
+          </ul>
+        </li>
+      </ul>
+      <div class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Pesquisar" id="cidade">
+        </div>
+        <button class="btn btn-default barra" id="buttonPesqui" onclick="buscarCity();">Buscar</button>
+      </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div id="alert">
+</div>
+<div id="loading">
+  <img src="imgs/carregando.gif" id="loadin">
+</div>
+
+<div id="resultados">
+<div class="container-fluid">
+<div class="row">
+
+  <div class="col-md-12" id="esquerda">
+
+
+  <div id="today">
+  <div id="estre">
+  <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="css-label"></label>
+  </div>
+
+    <span id="title"></span>
+    <div id="hoje">
+      <span id="tempo" class="inline-blo"> </span>
+      <span id="atual" class="inline-blo"> </span>
+
+      <div id="dados" class="inline-blo"> </div>
+
+    </div>
+</div>
+
+
+<h1>Previsão para os próximos dias</h1><br>
+<table id="tabelaPrevi">
+<tr id="dia1" class="fiveDays row fd" data-toggle="modal" data-target="#myModal"></tr>
+<tr id="dia2" class="fiveDays row fd" data-toggle="modal" data-target="#myModal"></tr>
+<tr id="dia3" class="fiveDays row fd" data-toggle="modal" data-target="#myModal"></tr>
+<tr id="dia4" class="fiveDays row fd" data-toggle="modal" data-target="#myModal"></tr>
+<tr id="dia5" class="fiveDays row fd" data-toggle="modal" data-target="#myModal"></tr>
+
+</table>
+
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><div id="diaEsp"></div></h4>
+      </div>
+      <div class="modal-body">
+        <div id="esp">
+
+<div class="row">
+<div id="hora0" class="fiveDays col-md-3"></div>
+<div id="hora3" class="fiveDays col-md-3"></div>
+<div id="hora6" class="fiveDays col-md-3"></div>
+<div id="hora9" class="fiveDays col-md-3"></div>
+</div>
+<div class="row">
+<div id="hora12" class="fiveDays col-md-3"></div>
+<div id="hora15" class="fiveDays col-md-3"></div>
+<div id="hora18" class="fiveDays col-md-3"></div>
+<div id="hora21" class="fiveDays col-md-3"></div>
+</div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+    <script src="js/jquery-2.2.4.js"></script>
+    <script src="js/bootstrap.js"></script>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/lokijs.min.js"></script>
+    <!--<script type="text/javascript" src="js/cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javas/index.js"></script>-->
+    <script src="js/js.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

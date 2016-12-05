@@ -1,0 +1,333 @@
+body{
+
+    background-size: cover;
+	background-image:url("../imgs/back.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+.fav{
+	font-size: 18px;
+	color: #bdbdbd;
+	background-color: #f5f5f5;
+	width: 100%;
+	padding: 10px;
+	padding-top: 20px;
+	font-family: verdana;
+	font-weight: bold;
+}
+
+
+.cityFav{
+	border-bottom: 1px #e0e0e0 solid;
+	padding: 8px; 
+	padding-left:15px;
+	padding-top:15px;
+	font-family: verdana;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.embaixo{
+	background-color: #424242;
+	width: 100%;
+	height: 50px;
+}
+
+#atual{
+	text-shadow:1px 1px 1px rgba(0,0,0,1);
+	font-weight:bold;
+	font-weight: bold;
+	font-size:5em;
+	text-align:left;
+	font-family:palatino linotype, palatino, serif;
+}
+
+#abaixo{
+	font-size: 0.3em;
+	font-weight: normal;
+}
+
+#dados{
+	font-size: 1em;
+}
+.flecha{
+	width: 20px;
+	height: 40px;
+}
+
+.humidade{
+	width: 40px;
+	height: 40px;
+}
+
+table{
+	text-align: center;
+}
+
+#tabelaPrevi{
+	width: 80%;
+	cursor:pointer;
+
+}
+
+.five{
+	border: solid black 2px;
+	text-align: center;
+	padding: 3px;
+}
+
+.fiveDays{
+	display: inline-block;
+}
+
+.minmax{
+	width: 30px;
+	height: 30px;	
+}
+
+td{
+	width: 200px;
+}
+
+#pesquisaCidade{
+	background-image: url(fundo.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+#preFive{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+#pre{
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+#title{
+	font-size: 3em;
+	font-family: verdana;
+}
+
+#imgTem{
+	width: 150px;
+	height: 150px;
+}
+
+.inline-blo{
+	display: inline-block;
+	font-size: 1.7em;
+	font-size: comic;
+}
+
+#tempo{
+	font-size: 2em;
+}
+
+#pes{
+	margin-top: 20em;
+}
+/*
+#cidade{
+  width: 100%;
+  height: 60px;
+  border: 1px solid transparent;
+  font-size: 18px;
+  padding: 10px 10px;
+  background-color: #424242;
+  outline: none;
+  color: black;
+  box-shadow: 0 5px 10px rgba(0,0,0,.3);
+  transition-property: background, border;
+  transition-duration: 0.9s;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 12px;
+}
+*/
+
+.hv{
+	display: inline-block;
+	font-size: 1.3em;
+
+}
+
+.fd{
+	border-bottom: 1px #e0e0e0 solid;
+	font-size: 14px;
+	font-family: verdana;
+	color: #424242;
+}
+
+#today{
+	background-color: #64b5f6;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 40px;
+}
+
+#direita{
+	padding-right: 0;
+}
+
+#esquerda{
+	padding-left: 0;
+	margin-right: 0;
+}
+
+#tabelaPrevi{
+	margin: auto;
+}
+
+
+
+.modal-header{
+	background-color: #fdd835;
+}
+
+
+
+#direita, #esquerda{
+	padding: 0;
+}
+
+#error{
+	margin-bottom: 0;
+
+}
+
+
+
+/*ESTRELA FAVORITO*/
+
+input[type=checkbox].css-checkbox {
+							position:absolute; z-index:-1000; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+							
+						}
+
+						input[type=checkbox].css-checkbox + label.css-label {
+							padding-left:45px;
+							height:40px; 
+							display:inline-block;
+							line-height:40px;
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							font-size:40px;
+							vertical-align:middle;
+							cursor:pointer;
+
+						}
+
+						input[type=checkbox].css-checkbox:checked + label.css-label {
+							background-position: 0 -40px;
+						}
+						label.css-label {
+				background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_019807af606f0dea9eb28a8d35a7afc6.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+#estre{
+	text-align: right;
+	width: 100%;
+}
+
+li:hover{
+	cursor: pointer;
+}
+
+.barra{
+	font-size: 35px;
+}
+
+#cidade{
+	font-size: 35px;
+	height: 40px;
+	margin: 0;
+}
+
+#menu{
+	font-size: 16px;
+	text-align: center;
+	font-family: verdana;
+}
+
+
+#buttonPesqui{
+	-moz-box-shadow:inset 0px 0px 0px 0px #91b8b3;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #91b8b3;
+	box-shadow:inset 0px 0px 0px 0px #91b8b3;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
+	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
+	background-color:#768d87;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #566963;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	padding:8px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+#buttonPesqui{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+	background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
+	background-color:#6c7c7c;
+}
+
+#buttonPesqui{
+	position:relative;
+	top:1px;
+}
+
+#resultados{
+	display: none;
+}
+
+#loadin{
+	width: 200px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+
+	}
+#loading{
+	display: none;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	width: 200px;
+	height: 200px;
+}
